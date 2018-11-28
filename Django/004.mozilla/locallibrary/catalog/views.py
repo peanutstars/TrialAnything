@@ -15,7 +15,6 @@ class UserData(dict):
 
 def index(request):
     '''View function for home page of site.'''
-    print(repr(request.session))
 
     num_books = Book.objects.all().count()
     num_instances = BookInstance.objects.all().count()
